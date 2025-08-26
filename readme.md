@@ -47,10 +47,11 @@ CREATE TABLE students (
     course VARCHAR(100) NOT NULL
 );
 ```
-## 2️⃣ Configure Database Connection
+### 2️⃣ Configure Database Connection
 
-Open db.php and set your credentials:
+1- Open db.php and set your credentials:
 
+```
 <?php
 $servername = "localhost";
 $username   = "root";
@@ -63,8 +64,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-
-## 3️⃣ Run the Project
+```
+### 3️⃣ Run the Project
 
 1-Place the project folder inside htdocs (if using XAMPP) or www (if using WAMP).
 
