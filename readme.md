@@ -79,7 +79,7 @@ http://localhost/student_management_system/read.php
 ## 🎨 UI Preview
 
 1- Student Record
-![Student Record](images/add_student_record.png)  
+![Student Record](images/student_record.png)  
 2-Add Student Record
 ![Add Student Record ](images/add_student_record.png)  
 3-Update Student Record
