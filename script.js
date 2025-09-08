@@ -1,4 +1,3 @@
-
     function toggleTheme() {
       const body = document.body;
       const currentTheme = body.getAttribute('data-theme');
@@ -10,7 +9,7 @@
         localStorage.setItem('theme', 'dark');
       }
     }
-    // Apply saved theme on page load
+
     if (localStorage.getItem('theme') === 'dark') {
       document.body.setAttribute('data-theme', 'dark');
     }

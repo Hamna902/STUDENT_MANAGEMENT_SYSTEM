@@ -20,14 +20,14 @@ $student = $result->fetch_assoc();
   <title>Update Student</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="style_update.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <button class="btn btn-light theme-toggle" onclick="toggleTheme()">
     <i class="bi bi-moon-fill"></i> Toggle Dark Mode
   </button>
   <div class="card">
-    <h2 class="text-center mb-4"><i class="bi bi-pencil-square"></i> Update Student</h2>
+    <h2 class="text-center mb-4 update"><i class="bi bi-pencil-square"></i> Update Student</h2>
     <?php if (isset($_GET['msg'])): ?>
       <div class="alert alert-purple text-center fw-bold shadow-sm">
         <i class="bi bi-info-circle-fill"></i> <?= htmlspecialchars($_GET['msg']); ?>
@@ -57,6 +57,6 @@ $student = $result->fetch_assoc();
       </div>
     </form>
   </div>
-<script src="script_update.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

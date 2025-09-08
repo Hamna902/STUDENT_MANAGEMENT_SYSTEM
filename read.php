@@ -6,7 +6,7 @@
   <title>Student Records</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="style_read.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <button class="btn btn-light theme-toggle" onclick="toggleTheme()">
@@ -104,6 +104,6 @@
       </nav>
     </div>
   </div>
-<script src="script_read.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

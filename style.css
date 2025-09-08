@@ -1,0 +1,174 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #2e026d, #5a189a, #9d4edd);
+  --card-bg: #f8f9fa;
+  --table-bg: #fff;
+  --text-color: #333;
+  --label-color: #333;
+  --input-border: #9d4edd;
+  --input-focus: #7b2cbf;
+  --thead-bg: #5a189a;
+  --thead-color: #fff;
+  --tbody-hover: #e6d6fa;
+  --btn-edit-bg: #7b2cbf;
+  --btn-edit-hover: #5a189a;
+  --btn-delete-bg: #ff4545;
+  --btn-delete-hover: #ff0000;
+  --btn-add-bg: #5a189a;
+  --btn-add-hover: #7b2cbf;
+  --btn-update-bg: linear-gradient(45deg, #7b2cbf, #5a189a);
+  --btn-save-bg: linear-gradient(45deg, #7b2cbf, #5a189a);
+  --btn-back-bg: #9d4edd;
+  --btn-back-hover: #7b2cbf;
+  --alert-bg: linear-gradient(90deg, #7b2cbf, #9d4edd);
+  --text-white: #fff;
+}
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(135deg, #1a013f, #3a1069, #6d2f9a);
+  --card-bg: #2c2c2c;
+  --table-bg: #333;
+  --text-color: #e0e0e0;
+  --label-color: #e0e0e0;
+  --input-border: #6d2f9a;
+  --input-focus: #9d4edd;
+  --thead-bg: #3a1069;
+  --thead-color: #e0e0e0;
+  --tbody-hover: #4a4a4a;
+  --btn-edit-bg: #9d4edd;
+  --btn-edit-hover: #7b2cbf;
+  --btn-delete-bg: #cc3333;
+  --btn-delete-hover: #b30000;
+  --btn-add-bg: #6d2f9a;
+  --btn-add-hover: #9d4edd;
+  --btn-update-bg: linear-gradient(45deg, #9d4edd, #7b2cbf);
+  --btn-save-bg: linear-gradient(45deg, #9d4edd, #7b2cbf);
+  --btn-back-bg: #6d2f9a;
+  --btn-back-hover: #9d4edd;
+  --alert-bg: linear-gradient(90deg, #9d4edd, #6d2f9a);
+  --text-white: #e0e0e0;
+}
+body {
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 60px;
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+  padding: 2rem;
+  width: 420px;
+}
+.table-container {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+}
+h2 {
+  font-weight: bold;
+  color: var(--text-white);
+}
+.create{
+    color: var(--input-focus);
+}
+.update{
+      color: var(--input-focus);
+}
+.form-label {
+  font-weight: 600;
+  color: var(--label-color);
+}
+.form-control {
+  border-radius: 10px;
+  background: var(--card-bg);
+  border: 2px solid var(--input-border);
+  color: var(--text-color);
+}
+.form-control:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 0.25rem rgba(157, 78, 221, 0.3);
+  color: var(--text-color);
+}
+.table thead {
+  background: var(--thead-bg);
+  color: var(--thead-color);
+  font-size: 1rem;
+}
+.table tbody tr {
+  background: var(--table-bg);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+.table tbody tr:hover {
+  background: var(--tbody-hover);
+  color: var(--text-color);
+}
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+}
+.btn-edit {
+  background: var(--btn-edit-bg);
+  color: var(--text-white);
+}
+.btn-edit:hover {
+  background: var(--btn-edit-hover);
+}
+.btn-delete {
+  background: var(--btn-delete-bg);
+  color: var(--text-white);
+}
+.btn-delete:hover {
+  background: var(--btn-delete-hover);
+}
+.btn-add {
+  background: var(--btn-add-bg);
+  color: var(--text-white);
+  font-weight: 600;
+}
+.btn-add:hover {
+  background: var(--btn-add-hover);
+}
+.btn-update {
+  background: var(--btn-update-bg);
+  color: var(--text-white);
+  border: none;
+}
+.btn-update:hover {
+  opacity: 0.9;
+}
+.btn-back {
+  background: var(--btn-back-bg);
+  color: var(--text-white);
+}
+.btn-back:hover {
+  background: var(--btn-back-hover);
+}
+.btn-save {
+  background: var(--btn-save-bg);
+  color: var(--text-white);
+  border: none;
+}
+.btn-save:hover {
+  opacity: 0.9;
+}
+.alert-purple {
+  background: var(--alert-bg);
+  color: var(--text-white);
+  border-radius: 10px;
+}
+.search-form {
+  max-width: 400px;
+}
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

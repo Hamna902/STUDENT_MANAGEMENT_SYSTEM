@@ -27,7 +27,13 @@ STUDENT_MANAGEMENT_SYSTEM/
 │── update.php # Form to edit student
 │── update-process.php # Logic to update student
 │── delete.php # Logic to delete student
+│── style.css  # Styling of pages
+├── script.js  # Dark theme toggler query
 │── images/               # Screenshots for preview
+│   ├──student_record.png
+│   ├──add_student_record.png
+│   ├──update_record.png
+│   ├──dark_theme.png
 │── sql/
 │    └── students.sql     # Exported database file
 ```

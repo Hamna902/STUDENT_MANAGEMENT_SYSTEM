@@ -6,14 +6,14 @@
   <title>Add Student</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="style_create.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <button class="btn btn-light theme-toggle" onclick="toggleTheme()">
     <i class="bi bi-moon-fill"></i> Toggle Dark Mode
   </button>
   <div class="card">
-    <h2 class="text-center mb-4"><i class="bi bi-person-plus-fill"></i> Add Student</h2>
+    <h2 class="text-center mb-4 create"><i class="bi bi-person-plus-fill"></i> Add Student</h2>
     <?php if (isset($_GET['msg'])): ?>
       <div class="alert alert-purple text-center fw-bold shadow-sm">
         <i class="bi bi-info-circle-fill"></i> <?= htmlspecialchars($_GET['msg']); ?>
@@ -42,6 +42,6 @@
       </div>
     </form>
   </div>
-<script src="script_create.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
