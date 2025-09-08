@@ -1,0 +1,91 @@
+
+    :root {
+      --bg-gradient: linear-gradient(135deg, #2e026d, #5a189a, #9d4edd);
+      --card-bg: #f8f9fa;
+      --text-color: #333;
+      --label-color: #333;
+      --input-border: #9d4edd;
+      --input-focus: #7b2cbf;
+      --btn-update-bg: linear-gradient(45deg, #7b2cbf, #5a189a);
+      --btn-back-bg: #9d4edd;
+      --btn-back-hover: #7b2cbf;
+      --alert-bg: linear-gradient(90deg, #7b2cbf, #9d4edd);
+      --text-white: #fff;
+    }
+    [data-theme="dark"] {
+      --bg-gradient: linear-gradient(135deg, #1a013f, #3a1069, #6d2f9a);
+      --card-bg: #2c2c2c;
+      --text-color: #e0e0e0;
+      --label-color: #e0e0e0;
+      --input-border: #6d2f9a;
+      --input-focus: #9d4edd;
+      --btn-update-bg: linear-gradient(45deg, #9d4edd, #7b2cbf);
+      --btn-back-bg: #6d2f9a;
+      --btn-back-hover: #9d4edd;
+      --alert-bg: linear-gradient(90deg, #9d4edd, #6d2f9a);
+      --text-white: #e0e0e0;
+    }
+    body {
+      min-height: 100vh;
+      background: var(--bg-gradient);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-white);
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 18px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+      padding: 2rem;
+      width: 420px;
+    }
+    h2 {
+      font-weight: bold;
+      color: #5a189a;
+    }
+    .form-label {
+      font-weight: 600;
+      color: var(--label-color);
+    }
+    .form-control {
+      border-radius: 10px;
+      background: var(--card-bg);
+      border: 2px solid var(--input-border);
+      color: var(--text-color);
+    }
+    .form-control:focus {
+      border-color: var(--input-focus);
+      box-shadow: 0 0 0 0.25rem rgba(157, 78, 221, 0.3);
+      color: var(--text-color);
+    }
+    .btn {
+      border-radius: 12px;
+      font-weight: 600;
+    }
+    .btn-update {
+      background: var(--btn-update-bg);
+      color: var(--text-white);
+      border: none;
+    }
+    .btn-update:hover {
+      opacity: 0.9;
+    }
+    .btn-back {
+      background: var(--btn-back-bg);
+      color: var(--text-white);
+    }
+    .btn-back:hover {
+      background: var(--btn-back-hover);
+    }
+    .alert-purple {
+      background: var(--alert-bg);
+      color: var(--text-white);
+      border-radius: 10px;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
