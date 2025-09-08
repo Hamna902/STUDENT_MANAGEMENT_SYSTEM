@@ -22,7 +22,7 @@
       color: #fff;
     }
     .table-container {
-      background: #f8f9fa; /* light background for readability */
+      background: #f8f9fa; 
       border-radius: 18px;
       padding: 2rem;
       box-shadow: 0px 8px 25px rgba(0,0,0,0.3);

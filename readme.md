@@ -1,16 +1,16 @@
 # 🎓 Student Management System (PHP + MySQL)
 
 A simple **CRUD application** built with **PHP, MySQL, and Bootstrap**.  
-This project demonstrates how to create, read, update, and delete student records from a database, with a clean **purple-themed UI**.
+This project demonstrates how to create, read, update, and delete student records from a database.
 
 ---
 
 ## 📌 Features
 - **Create:** Add new student records with Name, Email, and Course.
-- **Read:** View all students in a styled table.
+- **Read:** View all students in a table.
 - **Update:** Edit existing student details.
 - **Delete:** Remove student records with confirmation.
-- **Bootstrap Styling:** Modern, responsive design with purple gradient theme.
+- **Bootstrap Styling:** Modern, responsive design with gradient theme.
 
 ---
 
