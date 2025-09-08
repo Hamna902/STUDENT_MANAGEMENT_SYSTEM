@@ -6,6 +6,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email  = $_POST['email'];
     $course = $_POST['course'];
 
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: create.php?msg=Invalid email format");
+        exit;
+    }
+
+    // Check for duplicate email
+    $check = $conn->prepare("SELECT id FROM students WHERE email = ?");
+    $check->bind_param("s", $email);
+    $check->execute();
+    if ($check->get_result()->num_rows > 0) {
+        header("Location: create.php?msg=Error: Email already exists");
+        exit;
+    }
+
     $sql = "INSERT INTO students (name, email, course) VALUES (?, ?, ?)";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $name, $email, $course);
@@ -13,6 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         header("Location: read.php?msg=Student added successfully!");
     } else {
-        header("Location: read.php?msg=Error: Could not add student");
+        if ($conn->errno == 1062) {
+            header("Location: create.php?msg=Error: Email already exists");
+        } else {
+            header("Location: create.php?msg=Error: Could not add student");
+        }
     }
+    $stmt->close();
 }
+?>

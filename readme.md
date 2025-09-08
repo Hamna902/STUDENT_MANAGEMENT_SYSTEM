@@ -10,6 +10,9 @@ This project demonstrates how to create, read, update, and delete student record
 - **Read:** View all students in a table.
 - **Update:** Edit existing student details.
 - **Delete:** Remove student records with confirmation.
+- **Pagination:** Student records are displayed with **5 rows per page**.
+- **Search Bar:** Quickly find students by name, email, or course.
+- **Dark Theme Toggler:** Switch between light and dark modes for better usability.
 - **Bootstrap Styling:** Modern, responsive design with gradient theme.
 
 ---
@@ -24,6 +27,9 @@ STUDENT_MANAGEMENT_SYSTEM/
 │── update.php # Form to edit student
 │── update-process.php # Logic to update student
 │── delete.php # Logic to delete student
+│── images/               # Screenshots for preview
+│── sql/
+│    └── students.sql     # Exported database file
 ```
 
 
@@ -31,25 +37,19 @@ STUDENT_MANAGEMENT_SYSTEM/
 
 ## 🛠️ Setup Instructions
 
-### 1️⃣ Create Database
-Run the following SQL in **phpMyAdmin** or **MySQL CLI**:
+### 1️⃣ Import the Database
 
+1- Open phpMyAdmin (from XAMPP or WAMP).
+
+2- Create a database named student_db.
+
+3- Import the SQL file located at:
 ```
-sql
-CREATE DATABASE student_db;
-
-USE student_db;
-
-CREATE TABLE students (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    course VARCHAR(100) NOT NULL
-);
+sql/students.sql
 ```
 ### 2️⃣ Configure Database Connection
 
-1- Open db.php and set your credentials:
+1- Update your db.php file if needed:
 
 ```
 <?php
@@ -67,7 +67,7 @@ if ($conn->connect_error) {
 ```
 ### 3️⃣ Run the Project
 
-1-Place the project folder inside htdocs (if using XAMPP) or www (if using WAMP).
+1-Place the STUDENT_MANAGEMENT_SYSTEM folder inside htdocs/ (if using XAMPP) or www/ (if using WAMP)
 
 2-Start Apache and MySQL services.
 
@@ -84,6 +84,8 @@ http://localhost/student_management_system/read.php
 ![Add Student Record ](images/add_student_record.png)  
 3-Update Student Record
 ![Update Student Record](images/update_record.png)  
+4-Dark Theme Toggler
+![Dark Theme Toggler](images/dark_theme.png)  
 
 ---
 
