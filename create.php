@@ -17,7 +17,7 @@
       color: #fff;
     }
     .card {
-      background: #f8f9fa; /* light container */
+      background: #f8f9fa; 
       border-radius: 18px;
       box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
       padding: 2rem;
