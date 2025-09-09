@@ -34,8 +34,9 @@ STUDENT_MANAGEMENT_SYSTEM/
 │   ├──add_student_record.png
 │   ├──update_record.png
 │   ├──dark_theme.png
+│   ├──WORKING.mp4
 │── sql/
-│    └── students.sql     # Exported database file
+│   ├──students.sql     # Exported database file
 ```
 
 

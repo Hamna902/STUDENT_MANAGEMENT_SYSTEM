@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2025 at 07:52 PM
+-- Generation Time: Sep 09, 2025 at 10:30 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,9 +42,10 @@ INSERT INTO `students` (`id`, `name`, `email`, `course`) VALUES
 (1, 'Hamna Nazar', 'hamnanazar600@gmail.com', 'English and Maths'),
 (3, 'Mahnoor', 'mahnoor0@gmail.com', 'URDU and SCIENCE'),
 (4, 'Rexe', 'raxekac783@cronack.com', 'CS'),
-(5, 'Abdullah', 'abdullah11@gmail.com', 'CS'),
+(5, 'Abdullah', 'abdullah11@gmail.com', 'CS or AI'),
 (6, 'rafapir', 'rafapir948@cronack.com', 'Cybersecurity'),
-(7, 'Ali', 'ali11@gmail.com', 'AI or Data Science');
+(8, 'Noor', 'Noor1122@gmail.com', 'Maths and Urdu'),
+(9, 'AHAMD', 'ahmad11@gmail.com', 'English');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +66,7 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
